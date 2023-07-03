@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+     font-family: Sans;
+     src: url('/Fonts/Sans.woff') format('woff');
+}
+@font-face {
+     font-family: anjoman ;
+     src: url('/Fonts/Anjoman-Medium.woff') format('woff');
+}
+body{
+     font-family: anjoman;
+     direction: rtl;
+     overflow-x: hidden;
+}
+.router-link-active{
+     color: #ef4444;
+     transition-duration: 500ms;
+}
+.router-link-active::before{
+     background-color: #ef4444;
+     content: ' ';
+     border-radius: 10px;
+     width: 10px;
+     height: 10px;
+     position: absolute;
+     left: 110%;
+     top: 35%;
+     transition-duration: 500ms;
+}
+
+::-webkit-scrollbar {
+     width: 10px;
+   }
+   
+
+   ::-webkit-scrollbar-track {
+     box-shadow: inset 0 0 5px rgb(0, 0, 0);
+     border-radius: 10px;
+   }
+   
+   ::-webkit-scrollbar-thumb {
+     background: rgb(74, 74, 74);
+     border-radius: 10px;
+   }
