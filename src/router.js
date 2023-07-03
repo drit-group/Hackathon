@@ -13,7 +13,8 @@ const routes = [
      {path:'/manual' , component:manual},
      {path:'/gallery' , component:gallery},
      {path: '/Teams',component:Teams},
-     {path:'/aboutUs',component:aboutUs}
+     {path:'/aboutUs',component:aboutUs},
+     {path:'/Hackathon' , component:home}
 ]
 
 const router = createRouter({
